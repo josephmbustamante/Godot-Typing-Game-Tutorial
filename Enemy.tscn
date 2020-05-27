@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/SpaceMono-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/spaceshooter/Spritesheet/sheet.png" type="Texture" id=2]
+[ext_resource path="res://Enemy.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 36.8526, 42.3681 )
+
+[node name="Enemy" type="KinematicBody2D"]
+script = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = -99.0
+margin_top = 54.0
+margin_right = 98.0
+margin_bottom = 100.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Type this![/center]"
+text = "Type this!"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 408, 900, 97, 91 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.26953, -0.634766 )
+shape = SubResource( 2 )

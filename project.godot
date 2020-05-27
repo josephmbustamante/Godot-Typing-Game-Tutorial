@@ -19,6 +19,12 @@ config/name="Typing Game Tutorial"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+PromptList="*res://PromptList.gd"
+GlobalSignals="*res://GlobalSignals.gd"
+
 [rendering]
 
+quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"
