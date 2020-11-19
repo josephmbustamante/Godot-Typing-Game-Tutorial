@@ -36,7 +36,7 @@ func find_new_active_enemy(typed_character: String):
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventKey and not event.is_pressed():
+	if event is InputEventKey and event.is_pressed() and not event.is_echo():
 		var typed_event = event as InputEventKey
 		var key_typed = PoolByteArray([typed_event.unicode]).get_string_from_utf8()
 
