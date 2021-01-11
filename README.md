@@ -3,6 +3,12 @@ This repository contains the end result of following along with my Godot Typing 
 
 [You can find the series on YouTube here.](https://www.youtube.com/watch?v=qRPI_c9qI1o&list=PLpwc3ughKbZcJq-Sxew6OippNqlVc924q&index=2&t=422s)
 
+## How to Use This Repository
+
+I make a separate commit at the end of each video in the series, so if you want to pull down the code at a specific point in the series you can find the specific commit for the video you want (I label each commit message with the video part) in the commits tab.
+
+If there is a bug or issue with the code, feel free to open an issue here or reach out on the Discord server (Discord is preferable since I check it more, but I'll eventually see it here).
+
 ## Join our Community Discord
 
 If you have questions about the tutorial or the code, or just want to connect with other developers, join our community Discord by following the link below.
